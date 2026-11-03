@@ -19,7 +19,7 @@ DEFAULT_DAYS = 14
 
 DEFAULT_FIREBASE_URL = os.environ.get(
     "FIREBASE_URL",
-    "https://smart-farming-selada-default-rtdb.asia-southeast1.firebasedatabase.app/kelompok2.json",
+    "https://smart-farming-selada-default-rtdb.asia-southeast1.firebasedatabase.app/kelompok6.json",
 )
 CACHE_DIR = os.environ.get("CACHE_DIR") or ("/tmp/selada-cache" if os.environ.get("VERCEL") else os.path.join(os.path.dirname(os.path.abspath(__file__)), "cache"))
 FIREBASE_TIMEOUT = float(os.environ.get("FIREBASE_TIMEOUT", "30"))
