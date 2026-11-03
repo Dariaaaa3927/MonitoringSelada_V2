@@ -6,7 +6,7 @@
     /* ================= Pengaturan ================= */
     var KEY = 'selada-dash-v3';
     var DEF = {
-        firebase: 'https://smart-farming-selada-default-rtdb.asia-southeast1.firebasedatabase.app/kelompok6.json',
+        firebase: 'https://smart-farming-selada-default-rtdb.asia-southeast1.firebasedatabase.app/kelompok 6.json',
         poll: 2000, fetchN: 300, unit: 'C', clock: '24', theme: 'system', forceDemo: false,
         ver: 3, dry: 65, wet: 78, camIp: '', portalIp: '192.168.4.1',
         plantDate: '', harvestDay: 30,
