@@ -24,7 +24,7 @@
                 </svg>
                 <div>
                     <h1 id="loginTitle">Selada Keriting</h1>
-                    <p>Kelompok 2 · Smart Farming</p>
+                    <p>Kelompok 6 · Botanic Sync</p>
                 </div>
             </div>
             <p class="hint">Masuk untuk membuka dashboard pemantauan.</p>
@@ -56,7 +56,7 @@
                     </svg>
                     <div>
                         <h1>Selada Keriting</h1>
-                        <p>Kelompok 2 · Smart Farming</p>
+                        <p>Kelompok 6 · Botanic Sync</p>
                     </div>
                 </div>
                 <button class="sideclose" type="button" id="sideclose" aria-label="Tutup menu"><svg viewBox="0 0 24 24"
@@ -129,7 +129,8 @@
                                 <small id="dbPumpSince">Menunggu data…</small>
                             </div>
                             <div class="ss">
-                                <div class="conn" id="dbConn" data-s="init" role="status"><span class="dot"></span><span id="dbConnText">Menghubungkan…</span></div>
+                                <div class="conn" id="dbConn" data-s="init" role="status"><span class="dot"></span><span
+                                        id="dbConnText">Menghubungkan…</span></div>
                                 <small id="dbConnDetail">Data dari Firebase</small>
                             </div>
                         </div>
@@ -362,13 +363,17 @@
                                 <span class="age-unit">HST</span>
                             </div>
                             <p class="hint" id="lstmAgeHint">Hari Setelah Tanam</p>
-                            <div class="field" style="border-top:1px solid var(--line);margin-top:12px;padding-top:12px">
+                            <div class="field"
+                                style="border-top:1px solid var(--line);margin-top:12px;padding-top:12px">
                                 <div class="t"><b>Tanggal Tanam</b><span>Digunakan untuk menghitung HST.</span></div>
-                                <div class="ctl"><input type="date" id="lstmPlantDate"><button class="btn ghost" type="button" id="lstmSavePlant">Simpan</button></div>
+                                <div class="ctl"><input type="date" id="lstmPlantDate"><button class="btn ghost"
+                                        type="button" id="lstmSavePlant">Simpan</button></div>
                             </div>
                             <div class="field">
                                 <div class="t"><b>Target Panen (HST)</b><span>Selada keriting: 30–35 hari.</span></div>
-                                <div class="ctl"><input type="number" id="lstmHarvestDay" min="20" max="60" value="30" style="max-width:80px"><span>hari</span><button class="btn ghost" type="button" id="lstmSaveHarvest">Simpan</button></div>
+                                <div class="ctl"><input type="number" id="lstmHarvestDay" min="20" max="60" value="30"
+                                        style="max-width:80px"><span>hari</span><button class="btn ghost" type="button"
+                                        id="lstmSaveHarvest">Simpan</button></div>
                             </div>
                             <div style="margin-top:10px">
                                 <div class="progress">
@@ -415,13 +420,15 @@
                             </div>
                             <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--line)">
                                 <span class="label">Pembaruan terakhir</span>
-                                <p style="margin-top:4px;font-family:var(--f-mono);font-size:13px" id="lstmLastUpdate">—</p>
+                                <p style="margin-top:4px;font-family:var(--f-mono);font-size:13px" id="lstmLastUpdate">—
+                                </p>
                             </div>
                         </article>
                     </div>
 
                     <!-- Row 2: Gauge kematangan + Prediksi 4 hari -->
-                    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.5fr);gap:16px;align-items:start">
+                    <div
+                        style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.5fr);gap:16px;align-items:start">
                         <!-- Gauge -->
                         <article class="panel" aria-labelledby="h-lstm-gauge" style="text-align:center">
                             <div class="panel-head" style="justify-content:center">
@@ -485,7 +492,10 @@
                                     </tr>
                                 </thead>
                                 <tbody id="lstmTableBody">
-                                    <tr><td colspan="8" class="empty" style="text-align:center">Atur tanggal tanam untuk menampilkan tabel.</td></tr>
+                                    <tr>
+                                        <td colspan="8" class="empty" style="text-align:center">Atur tanggal tanam untuk
+                                            menampilkan tabel.</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -500,16 +510,21 @@
                     <div class="col">
                         <!-- Unified Upload + Segmentation Card -->
                         <article class="panel" aria-labelledby="h-cnn-upload">
-                            <div class="panel-head" style="display:flex;align-items:center;justify-content:space-between">
+                            <div class="panel-head"
+                                style="display:flex;align-items:center;justify-content:space-between">
                                 <h2 id="h-cnn-upload" style="display:flex;align-items:center;gap:8px">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;color:#c084fc" aria-hidden="true">
-                                        <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        style="width:20px;height:20px;color:#c084fc" aria-hidden="true">
+                                        <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
                                     </svg>
                                     Upload Gambar
                                 </h2>
                                 <div style="display:flex;gap:6px;align-items:center">
-                                    <button class="btn ghost small" type="button" id="cnnSampleBtn" title="Muat foto contoh selada">Contoh</button>
-                                    <button class="btn ghost small" type="button" id="cnnCamCapture" title="Ambil foto dari ESP32-CAM">📷 Kamera</button>
+                                    <button class="btn ghost small" type="button" id="cnnSampleBtn"
+                                        title="Muat foto contoh selada">Contoh</button>
+                                    <button class="btn ghost small" type="button" id="cnnCamCapture"
+                                        title="Ambil foto dari ESP32-CAM">📷 Kamera</button>
                                     <span class="demotag">Simulasi CNN</span>
                                 </div>
                             </div>
@@ -517,8 +532,10 @@
                             <!-- Dropzone matching user screenshot -->
                             <div class="cnn-upload-zone" id="cnnDropZone">
                                 <div class="cnn-cloud-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                        <path d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path
+                                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                                     </svg>
                                 </div>
                                 <b>Klik untuk pilih foto selada</b>
@@ -545,17 +562,21 @@
 
                                 <!-- Legend matching user screenshot -->
                                 <div class="cnn-seg-legend">
-                                    Warna segmentasi: <span style="color:#22c55e;font-weight:600">hijau</span> sehat &bull; 
-                                    <span style="color:#eab308;font-weight:600">kuning</span> menguning &bull; 
-                                    <span style="color:#b45309;font-weight:600">cokelat</span> nekrosis &bull; 
-                                    <span style="color:#ef4444;font-weight:600">merah</span> bercak gelap &bull; 
+                                    Warna segmentasi: <span style="color:#22c55e;font-weight:600">hijau</span> sehat
+                                    &bull;
+                                    <span style="color:#eab308;font-weight:600">kuning</span> menguning &bull;
+                                    <span style="color:#b45309;font-weight:600">cokelat</span> nekrosis &bull;
+                                    <span style="color:#ef4444;font-weight:600">merah</span> bercak gelap &bull;
                                     <span style="color:#38bdf8;font-weight:600">biru</span> lubang
                                 </div>
 
                                 <!-- Hapus Gambar button matching user screenshot -->
                                 <button class="btn full cnn-btn-reset" type="button" id="cnnReset">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px" aria-hidden="true">
-                                        <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                     </svg>
                                     Hapus Gambar
                                 </button>
@@ -597,7 +618,8 @@
                                 <span class="demotag">Simulasi</span>
                             </div>
                             <div class="bars" id="cnnPestBars"></div>
-                            <p class="hint" style="margin-top:12px">⚠️ Hasil ini merupakan simulasi untuk keperluan demonstrasi. Gunakan pemeriksaan langsung untuk diagnosis akurat.</p>
+                            <p class="hint" style="margin-top:12px">⚠️ Hasil ini merupakan simulasi untuk keperluan
+                                demonstrasi. Gunakan pemeriksaan langsung untuk diagnosis akurat.</p>
                         </article>
                     </div>
 
@@ -608,7 +630,8 @@
                                 <h2 id="h-cnn-info">Status Upload</h2>
                             </div>
                             <div id="cnnInfoContent">
-                                <p class="hint">Belum ada gambar yang diupload. Pilih atau seret gambar daun selada untuk memulai analisis CNN.</p>
+                                <p class="hint">Belum ada gambar yang diupload. Pilih atau seret gambar daun selada
+                                    untuk memulai analisis CNN.</p>
                             </div>
                         </article>
 
@@ -643,7 +666,8 @@
                                 <li>Prediksi kematangan dihitung</li>
                                 <li>Potensi hama/penyakit terdeteksi</li>
                             </ol>
-                            <p class="hint" style="margin-top:10px">Untuk hasil terbaik, gunakan gambar dengan cahaya yang cukup dan fokus pada daun selada.</p>
+                            <p class="hint" style="margin-top:10px">Untuk hasil terbaik, gunakan gambar dengan cahaya
+                                yang cukup dan fokus pada daun selada.</p>
                         </article>
                     </aside>
                 </div>
@@ -655,33 +679,47 @@
                     <article class="panel">
                         <div class="panel-head" style="display:block">
                             <h2 style="margin:0 0 4px;font-size:20px">History</h2>
-                            <p class="hint" style="margin:0;font-size:13px">Riwayat data sensor dari Firebase dan hasil analisis CNN</p>
+                            <p class="hint" style="margin:0;font-size:13px">Riwayat data sensor dari Firebase dan hasil
+                                analisis CNN</p>
                         </div>
 
                         <!-- Toolbar: Cari + Export CSV + Hapus -->
-                        <div class="hist-toolbar" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:16px 0">
+                        <div class="hist-toolbar"
+                            style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:16px 0">
                             <div style="flex:1;min-width:220px">
-                                <input type="text" id="histSearch" placeholder="Cari..." style="width:100%;padding:9px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--fg);font-size:13px" autocomplete="off">
+                                <input type="text" id="histSearch" placeholder="Cari..."
+                                    style="width:100%;padding:9px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--fg);font-size:13px"
+                                    autocomplete="off">
                             </div>
-                            <button class="btn" type="button" id="histExportCsv" style="background:#84cc16;color:#0f172a;border-color:#84cc16;font-weight:600;display:inline-flex;align-items:center;gap:6px;padding:9px 16px;cursor:pointer">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px" aria-hidden="true">
-                                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                            <button class="btn" type="button" id="histExportCsv"
+                                style="background:#84cc16;color:#0f172a;border-color:#84cc16;font-weight:600;display:inline-flex;align-items:center;gap:6px;padding:9px 16px;cursor:pointer">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"
+                                    aria-hidden="true">
+                                    <path d="M12 5v14M5 12l7 7 7-7" />
                                 </svg>
                                 Export CSV
                             </button>
-                            <button class="btn ghost" type="button" id="histClear" style="display:inline-flex;align-items:center;gap:6px;padding:9px 14px;cursor:pointer">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px" aria-hidden="true">
-                                    <path d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                            <button class="btn ghost" type="button" id="histClear"
+                                style="display:inline-flex;align-items:center;gap:6px;padding:9px 14px;cursor:pointer">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                 </svg>
                                 Hapus
                             </button>
                         </div>
 
                         <!-- Data Table -->
-                        <div class="tablewrap" style="overflow-x:auto;margin-top:10px;border:1px solid var(--line);border-radius:8px">
-                            <table style="width:100%;min-width:820px;border-collapse:collapse;font-size:13px" id="histTable">
+                        <div class="tablewrap"
+                            style="overflow-x:auto;margin-top:10px;border:1px solid var(--line);border-radius:8px">
+                            <table style="width:100%;min-width:820px;border-collapse:collapse;font-size:13px"
+                                id="histTable">
                                 <thead>
-                                    <tr style="border-bottom:1px solid var(--line);text-align:left;background:var(--surface-2);color:var(--muted)">
+                                    <tr
+                                        style="border-bottom:1px solid var(--line);text-align:left;background:var(--surface-2);color:var(--muted)">
                                         <th style="padding:12px 14px;font-weight:600">Waktu</th>
                                         <th style="padding:12px 14px;font-weight:600">Soil (%)</th>
                                         <th style="padding:12px 14px;font-weight:600">Suhu (&deg;C)</th>
@@ -694,14 +732,16 @@
                                 </thead>
                                 <tbody id="histTableBody">
                                     <tr>
-                                        <td colspan="8" style="text-align:center;padding:36px 14px;color:var(--muted)">Belum ada data.</td>
+                                        <td colspan="8" style="text-align:center;padding:36px 14px;color:var(--muted)">
+                                            Belum ada data.</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
                         <!-- Footer Counter -->
-                        <div style="margin-top:14px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+                        <div
+                            style="margin-top:14px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
                             <span id="histCount">Menampilkan 0 dari 0 data.</span>
                             <div id="histPagination" style="display:none;gap:6px">
                                 <button class="btn ghost small" type="button" id="histPrev">&larr; Sebelumnya</button>
@@ -759,13 +799,15 @@
                                 <h2>Batas zona tanah</h2>
                             </div>
                             <div class="field">
-                                <div class="t"><b>Kering di bawah</b><span>Acuan: ≤ 65% tanah kering, pompa ON.</span></div>
+                                <div class="t"><b>Kering di bawah</b><span>Acuan: ≤ 65% tanah kering, pompa ON.</span>
+                                </div>
                                 <div class="ctl"><input type="number" id="setDry" min="1" max="98" step="1">
                                     <span>%</span>
                                 </div>
                             </div>
                             <div class="field">
-                                <div class="t"><b>Basah di atas</b><span>Acuan: ≥ 78% tanah basah, pompa OFF.</span></div>
+                                <div class="t"><b>Basah di atas</b><span>Acuan: ≥ 78% tanah basah, pompa OFF.</span>
+                                </div>
                                 <div class="ctl"><input type="number" id="setWet" min="2" max="99" step="1">
                                     <span>%</span>
                                 </div>
@@ -778,8 +820,11 @@
                                 <h2>Machine Learning &amp; pengolahan data</h2>
                             </div>
                             <div class="field">
-                                <div class="t"><b>Alamat server Python</b><span>Kosongkan bila halaman dibuka dari server Python yang sama; bila dibuka dari berkas isi mis. http://localhost:5000.</span></div>
-                                <div class="ctl"><input type="text" id="setApi" autocomplete="off" spellcheck="false" placeholder="http://localhost:5000"></div>
+                                <div class="t"><b>Alamat server Python</b><span>Kosongkan bila halaman dibuka dari
+                                        server Python yang sama; bila dibuka dari berkas isi mis.
+                                        http://localhost:5000.</span></div>
+                                <div class="ctl"><input type="text" id="setApi" autocomplete="off" spellcheck="false"
+                                        placeholder="http://localhost:5000"></div>
                             </div>
                             <p class="msg" id="mlMsg" role="status"></p>
                         </article>
